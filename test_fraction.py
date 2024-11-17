@@ -69,3 +69,6 @@ def test_fraction_class():
     print(f"Mixed fraction representation of {improper_fraction}: {mixed_fraction_representation}") 
 
     print("\n***TEST FINISHED SUCCESFULLY***")   # No error encountered during runtime
+
+
+test_fraction_class()
