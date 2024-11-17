@@ -112,6 +112,3 @@ class fraction:
         return f'{self.numerator}/{self.denominator}'
 
 
-###TEST###
-from test_fraction import test_fraction_class
-test_fraction_class()
