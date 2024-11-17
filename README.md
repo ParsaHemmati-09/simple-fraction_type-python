@@ -1,4 +1,4 @@
-# Fraction Class Documentation
+# Fraction Class
 
 ## Overview
 
@@ -128,7 +128,8 @@ float_value = f1.to_float()
 print(float_value)  # Output: 0.5
 
 # Converting to mixed number
-mixed_fraction = f1.to_mixed_fraction()
-print(mixed_fraction)  # Output: 1/2
+f4 = fraction(10,3)
+mixed_fraction = f4.to_mixed_fraction()
+print(mixed_fraction)  # Output: 3 1/3
 
 
