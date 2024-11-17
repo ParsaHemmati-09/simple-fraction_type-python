@@ -85,14 +85,19 @@ class fraction:
     def is_equal_to(self,fraction_x):
         return self.to_float() == fraction_x.to_float()
 
-    def simplify(self):
+    def simplify(self, new_output = False):
         if self.denominator < 0:
             self.numerator = -self.numerator
             self.denominator = -self.denominator
-            
+
+   
         gcd_value = math.gcd(abs(self.numerator), abs(self.denominator))
         self.numerator //= gcd_value
         self.denominator //= gcd_value
+
+        if new_output:
+            return fraction(self.numerator, self.denominator)
+
 
     def to_float(self):
         return self.numerator / self.denominator
